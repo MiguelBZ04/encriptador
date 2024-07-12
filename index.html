@@ -3,53 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
     <script src="index.js" type="text/javascript"></script>
-    <title>Encriptador de Texto</title>
-    <link rel="stylesheet"  href="index.css">
+    <link rel="stylesheet" href="index.css">
 </head>
-<body >
-<div class="conteiner" >  
-    <div class="div1">
-    <img src="Logo.png">
-    </div>
-
-    <div class="div2">
-        <div class="texto">
-        <input class="textarea" id="textoentrada"  placeholder="Escribe el mensaje aquí"></input>
-        </div>
-        <div class="condiciones">
-            <p>Solo letras minusculas y sin acéntos</p>
-        </div>
-        <div class="botones">
-        <button type="button" class="btnEncriptar" id="btnEncriptar" onclick="encriptar()">Encritar</button>
-        <button type="button" class="btnDesencriptar" id="btnDesencriptar" onclick="desencriptar()">Desencriptar</button>
-        </div>  
-    </div>
-
-    <div class="div3">
-
-
-        <div class="contenedorDeSalida">
-
-
-            <div class="textoSalida">
-            <textarea  type="text" class="resultado" id="texSalida" cols="16" rows="22"></textarea>
-            
-            
-            <button type="button"class="btncopiar"  id="btncopiar" onclick="copiar()" > Copiar </button>
+<body>
+    <div class="conteiner">
+        <div class="div1"></div>
+            <div class="logo">
+            <img clas= "logo" src="Logo.png">
             </div>
-            
 
 
-            <div class="encriptado">
-            <img src="Muñeco.png" class="muñeco">
-            <h2>Ningun mensaje encontrado</h2>
-            <p>Ingrese el texto que deseas encriptar o desencriptar</p>
+
+
+
+
+
+        <div class="div2" ></div>
+            <div class="texto">
+                <input class="textarea" id="textoentrada"  placeholder="Escribe el mensaje aquí"></input>
             </div>
-        </div>
+            <div class="condiciones">
+                <p>Solo letras minusculas y sin acéntos</p>
+            </div>
+            <div class="botones"> 
+                <button type="button" class="btnEncriptar" id="btnEncriptar" onclick="encriptar()">Encrpitar</button>
+                <button type="button" class="btnDesencriptar" id="btnDesencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+                
 
+
+
+
+
+
+
+
+        <div class="div3" >  
+            <div class="imagen">
+                <img src="Muñeco.png">
+                <h2> Ningun mensaje encontrado </h2>
+                <p>Ingrese el texto que deseas encriptar o
+                     desencriptar</p>
+            </div>
+            <div class="salida">
+                <textarea  type="text" class="resultado" id="resultado" cols="16" rows="22"></textarea>
+            </div>
+                <div class="boton">
+                <button type="button" class="btncopiar"   id="btncopiar" onclick="copiar()" > Copiar </button>
+            
+                </div>
+        </div> 
 
     </div>
-</div> 
+    
 </body>
 </html>
